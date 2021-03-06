@@ -92,6 +92,10 @@ def run_tests():
                 Distr.append(round(dispersion(list), 7))
             print("E", Exp)
             print("D", Distr)
+            dif = []
+            for i in range(len(Exp)):
+                dif.append([Exp[i]-m.sqrt(Distr[i]), Exp[i]+m.sqrt(Distr[i])])
+            print("E-sqrt(D)",dif)
 
 
 run_tests()
