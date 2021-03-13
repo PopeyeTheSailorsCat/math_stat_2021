@@ -68,14 +68,10 @@ def main():
         for size in selection_size:
             for i in range(NUMBER_OF_EXPERIMENT):
                 distr = f[fun_pos](size)
-                # print(distribution)
-                # distribution.sort()
                 count += count_blowout(distr)
             blowouts.append(count / (size * NUMBER_OF_EXPERIMENT))
             distr = f[fun_pos](size)
-            # distribution.sort()
             data.append(distr)
-        # print(data)
         render_boxplot(data, f[name_pos])
         print(f[name_pos])
         print(LINE_20 + str(round(blowouts[0], 3)))
