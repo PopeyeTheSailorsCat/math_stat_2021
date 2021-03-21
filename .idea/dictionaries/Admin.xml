@@ -2,8 +2,12 @@
   <dictionary name="Admin">
     <words>
       <w>distr</w>
+      <w>funct</w>
+      <w>koef</w>
+      <w>koefs</w>
       <w>quan</w>
       <w>quantile</w>
+      <w>whitegrid</w>
     </words>
   </dictionary>
 </component>
