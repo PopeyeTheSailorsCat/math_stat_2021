@@ -132,6 +132,7 @@ def get_signal_data(signal, zones):
         data_part = list()
         for j in range(borders[0], borders[1]):
             data_part.append(signal[j])
+
         signal_data.append(data_part)
     return signal_data
 
@@ -147,6 +148,7 @@ def get_Fisher_score(signal, area_data):
     fishers = []
     for i in range(len(area_data)):
         start = area_data[i][0]
+
         finish = area_data[i][1]
         k = get_K(finish - start)
         while k == finish - start:
